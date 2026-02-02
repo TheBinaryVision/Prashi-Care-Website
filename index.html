@@ -3,100 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Prashi Care | Critical Care at Home</title>
+    <meta name="description" content="Hospital-grade ICU setup, ventilators, and critical care nursing at home. Compassionate, professional medical care in India. Book a free consultation.">
+    
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <meta property="og:title" content="Prashi Care | Hospital at Home">
+    <meta property="og:description" content="Expert ICU setup and nursing care at home. bringing the hospital to you with love and professionalism.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://prashicare.com">
+    <meta property="og:type" content="website">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                    },
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
                     colors: {
-                        prashiBlue: '#1e40af',   /* Trust/Medical */
-                        prashiPink: '#ec4899',   /* Care/Love */
-                        prashiGreen: '#10b981',  /* Health/Life */
-                        prashiYellow: '#f59e0b', /* Warmth */
+                        prashiBlue: '#1e40af', prashiPink: '#ec4899',
+                        prashiGreen: '#10b981', prashiYellow: '#f59e0b',
                         prashiDark: '#0f172a',
                     }
                 }
             }
         }
     </script>
-    <style>
-        html { scroll-behavior: smooth; }
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #f0f9ff 0%, #fff1f2 100%);
-        }
-        .text-gradient {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(to right, #1e40af, #ec4899);
-        }
-    </style>
 </head>
-<body class="font-sans text-gray-700 antialiased">
+<body class="font-sans text-gray-700 antialiased overflow-x-hidden">
 
     <nav class="fixed w-full z-50 glass-effect border-b border-gray-100 shadow-sm transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex items-center space-x-2">
-                    <div class="relative">
-                        <i class="fas fa-heart text-3xl text-gradient"></i>
-                        <i class="fas fa-plus absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[10px]"></i>
-                    </div>
-                    <div>
-                        <span class="text-2xl font-bold text-gradient">Prashi Care</span>
-                    </div>
-                </div>
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="logo.png" alt="Prashi Care Logo" class="h-12 w-auto object-contain">
+                    <span class="text-2xl font-bold text-gradient">Prashi Care</span>
+                </a>
                 
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#about" class="text-gray-600 hover:text-prashiBlue font-medium transition">About Us</a>
-                    <a href="#services" class="text-gray-600 hover:text-prashiBlue font-medium transition">Services</a>
-                    <a href="#why-us" class="text-gray-600 hover:text-prashiBlue font-medium transition">Why Us</a>
-                    <a href="#contact" class="px-6 py-2.5 rounded-full bg-gradient-to-r from-prashiBlue to-prashiPink text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition font-medium">
-                        Free Consultation
-                    </a>
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About Us</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#why-us" class="nav-link">Why Us</a>
+                    <a href="#contact" class="btn-primary">Free Consultation</a>
                 </div>
+
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-prashiBlue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full left-0">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 shadow-lg">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-prashiBlue">About Us</a>
+                <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-prashiBlue">Services</a>
+                <a href="#why-us" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-prashiBlue">Why Us</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-prashiPink font-bold">Book Consultation</a>
             </div>
         </div>
     </nav>
 
     <section id="home" class="pt-32 pb-24 hero-gradient relative overflow-hidden">
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-200 opacity-20 blur-3xl"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-pink-200 opacity-20 blur-3xl"></div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-blue-200 opacity-20 blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-pink-200 opacity-20 blur-3xl animate-pulse"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="max-w-4xl mx-auto">
-                <span class="inline-block py-1 px-4 rounded-full bg-white border border-blue-100 text-prashiBlue text-sm font-semibold mb-6 shadow-sm">
-                    <i class="fas fa-hospital-user mr-2"></i> Hospital-Grade Care at Home
-                </span>
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
-                    Hospital-Grade Care. <br>
-                    <span class="text-gradient">In the Place You Call Home.</span>
-                </h1>
-                <h2 class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-                    Advanced ICU infrastructure, expert critical care nurses, and 24/7 monitoring—delivered with the warmth your family deserves. 
-                    <br class="hidden md:block"><br>
-                    When critical illness strikes, you shouldn't have to choose between medical excellence and comfort. Prashi Care brings ventilators, cardiac monitors, and specialized nursing directly to your doorstep.
-                </h2>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#contact" class="px-8 py-4 rounded-full bg-prashiBlue text-white font-bold text-lg shadow-lg hover:bg-blue-800 transition flex items-center justify-center">
-                        Schedule Your Free Consultation <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                    <a href="#services" class="px-8 py-4 rounded-full bg-white text-prashiBlue border border-prashiBlue font-semibold text-lg shadow hover:bg-gray-50 transition flex items-center justify-center">
-                        Explore Services
-                    </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <div class="text-center md:text-left">
+                    <span data-aos="fade-down" class="inline-block py-1 px-4 rounded-full bg-white border border-blue-100 text-prashiBlue text-sm font-semibold mb-6 shadow-sm">
+                        <i class="fas fa-hospital-user mr-2"></i> Hospital-Grade Care at Home
+                    </span>
+                    <h1 data-aos="fade-up" data-aos-delay="100" class="text-4xl md:text-6xl font-bold leading-tight mb-6 text-gray-900">
+                        Hospital-Grade Care. <br>
+                        <span class="text-gradient">In the Place You Call Home.</span>
+                    </h1>
+                    <h2 data-aos="fade-up" data-aos-delay="200" class="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                        Advanced ICU infrastructure, expert critical care nurses, and 24/7 monitoring—delivered with the warmth your family deserves.
+                    </h2>
+                    <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+                        <a href="#contact" class="px-8 py-4 rounded-full bg-prashiBlue text-white font-bold text-lg shadow-lg hover:bg-blue-800 transition flex items-center justify-center">
+                            Free Consultation <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#services" class="px-8 py-4 rounded-full bg-white text-prashiBlue border border-prashiBlue font-semibold text-lg shadow hover:bg-gray-50 transition flex items-center justify-center">
+                            Explore Services
+                        </a>
+                    </div>
                 </div>
+
+                <div data-aos="fade-left" class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-100 to-pink-100 rounded-3xl transform rotate-3 scale-105 opacity-50"></div>
+                    <img src="hero.jpg" alt="Prashi Care Medical Team" class="relative rounded-3xl shadow-2xl w-full h-auto object-cover z-10 hover:scale-[1.02] transition duration-500">
+                </div>
+
             </div>
         </div>
     </section>
@@ -104,83 +113,57 @@
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
+                <div data-aos="fade-right">
                     <h2 class="text-sm font-bold tracking-wide text-prashiPink uppercase mb-2">Our Mission</h2>
                     <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                         Where Medical Precision Meets <span class="text-prashiPink">Human Compassion</span>
                     </h3>
                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        Critical care doesn't have to feel clinical. It doesn't have to be cold. 
-                        At <strong>Prashi Care</strong>, we believe that healing happens faster when patients are surrounded by the people they love—in spaces that feel like home, not hospital wards.
+                        At <strong>Prashi Care</strong>, we believe that healing happens faster when patients are surrounded by the people they love. We don't just monitor vitals; we listen, we reassure, and we become an extension of your family.
                     </p>
                     <div class="p-6 bg-blue-50 border-l-4 border-prashiBlue rounded-r-xl mb-6">
                         <h4 class="text-xl font-bold text-prashiBlue mb-2">We're Not Just Healthcare Providers.</h4>
-                        <p class="text-gray-700">We are your partners in care. Our team doesn't just monitor vitals; we listen, we reassure, and we become an extension of your family.</p>
-                    </div>
-                    <p class="text-gray-600 italic">
-                        "Because critical care should be delivered with both hands: one holding advanced medical equipment, the other holding yours."
-                    </p>
-                </div>
-                <div class="relative">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-100 to-pink-100 rounded-2xl transform rotate-3"></div>
-                    <div class="relative bg-white p-2 rounded-2xl shadow-xl">
-                        <div class="h-96 bg-gray-100 rounded-xl flex items-center justify-center overflow-hidden">
-                            <i class="fas fa-hands-holding-circle text-6xl text-gray-300"></i>
-                            <span class="sr-only">Image: Compassionate Care</span>
-                        </div>
+                        <p class="text-gray-700">We are your partners in care. Critical care should be delivered with both hands: one holding advanced medical equipment, the other holding yours.</p>
                     </div>
                 </div>
+                
+                <div class="relative" data-aos="fade-left">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-blue-100 to-pink-100 rounded-2xl transform -rotate-3 scale-105"></div>
+                    <img src="card.jpg" alt="Compassionate Care Card" class="relative rounded-2xl shadow-xl w-full h-auto object-cover z-10 border-4 border-white">
+                </div>
+
             </div>
         </div>
     </section>
 
     <section id="services" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Comprehensive Critical Care</h2>
                 <div class="h-1 w-24 bg-gradient-to-r from-prashiBlue to-prashiPink mx-auto rounded-full"></div>
                 <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Tailored to your home needs. From full ICU setups to specialized equipment rental.</p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiBlue">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6 text-prashiBlue">
-                        <i class="fas fa-bed-pulse text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">ICU at Home Setup</h3>
-                    <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                        Full-scale intensive care infrastructure. We install hospital-grade ventilators, monitors, and infusion pumps, turning any room into a safe space.
-                    </p>
+                <div data-aos="flip-left" data-aos-delay="100" class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiBlue">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6 text-prashiBlue"><i class="fas fa-bed-pulse text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">ICU at Home</h3>
+                    <p class="text-sm text-gray-600">Full-scale intensive care infrastructure. Ventilators, monitors, and infusion pumps installed at home.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiPink">
-                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6 text-prashiPink">
-                        <i class="fas fa-user-nurse text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">24/7 Critical Care Nursing</h3>
-                    <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                        Round-the-clock care from certified nurses trained in ICU protocols. Skilled professionals who treat your loved one like family.
-                    </p>
+                <div data-aos="flip-left" data-aos-delay="200" class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiPink">
+                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6 text-prashiPink"><i class="fas fa-user-nurse text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Critical Nursing</h3>
+                    <p class="text-sm text-gray-600">24/7 care from certified nurses trained in ICU protocols. Skilled professionals who treat you like family.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiGreen">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-prashiGreen">
-                        <i class="fas fa-crutch text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">Post-Op & Elderly Care</h3>
-                    <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                        Specialized recovery programs for surgery discharge or long-term assistance. Wound care, physiotherapy, and dignity preservation.
-                    </p>
+                <div data-aos="flip-left" data-aos-delay="300" class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiGreen">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-6 text-prashiGreen"><i class="fas fa-crutch text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Post-Op Care</h3>
+                    <p class="text-sm text-gray-600">Specialized recovery programs. Wound care, physiotherapy coordination, and dignity preservation.</p>
                 </div>
-
-                <div class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiYellow">
-                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6 text-prashiYellow">
-                        <i class="fas fa-truck-medical text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">Medical Equipment Rental</h3>
-                    <p class="text-sm text-gray-600 mb-4 leading-relaxed">
-                        Rent oxygen concentrators, hospital beds, and wheelchairs. Sanitized, certified, and delivered with setup assistance.
-                    </p>
+                <div data-aos="flip-left" data-aos-delay="400" class="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-t-4 border-prashiYellow">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-6 text-prashiYellow"><i class="fas fa-truck-medical text-2xl"></i></div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Equip Rental</h3>
+                    <p class="text-sm text-gray-600">Rent oxygen concentrators, hospital beds, and wheelchairs. Sanitized and delivered quickly.</p>
                 </div>
             </div>
         </div>
@@ -190,58 +173,38 @@
         <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#4f46e5 1px, transparent 1px); background-size: 30px 30px;"></div>
         
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
+            <div class="text-center mb-16" data-aos="fade-down">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">The Prashi Difference</h2>
                 <p class="text-gray-400">Where Innovation Embraces Humanity</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-10">
-                <div class="text-center">
-                    <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm">
-                        <i class="fas fa-laptop-medical text-3xl text-blue-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">Futuristic Monitoring</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Cloud-based systems track vitals in real-time. Doctors and family members receive instant alerts via a secure dashboard. Transparency is our promise.
-                    </p>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm"><i class="fas fa-laptop-medical text-3xl text-blue-400"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Futuristic Monitoring</h3>
+                    <p class="text-gray-400 text-sm">Real-time cloud tracking of vitals. Doctors receive instant alerts. Transparency is our promise.</p>
                 </div>
-
-                <div class="text-center">
-                    <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm">
-                        <i class="fas fa-hand-holding-heart text-3xl text-pink-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">The Human Touch</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Our nurses work with heart. They remember favorite songs and hold space during difficult conversations. It's not just a job; it's a calling.
-                    </p>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm"><i class="fas fa-hand-holding-heart text-3xl text-pink-400"></i></div>
+                    <h3 class="text-xl font-bold mb-3">The Human Touch</h3>
+                    <p class="text-gray-400 text-sm">Our nurses work with heart. They remember favorite songs and hold space during difficult conversations.</p>
                 </div>
-
-                <div class="text-center">
-                    <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm">
-                        <i class="fas fa-indian-rupee-sign text-3xl text-green-400"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3 text-white">Cost-Effective Excellence</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        Hospital-quality intervention at a fraction of the cost of a private ICU bed. No hidden charges. No compromises on quality.
-                    </p>
+                <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm"><i class="fas fa-indian-rupee-sign text-3xl text-green-400"></i></div>
+                    <h3 class="text-xl font-bold mb-3">Cost-Effective</h3>
+                    <p class="text-gray-400 text-sm">Hospital-quality intervention at a fraction of the ICU cost. No hidden charges. No compromises.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="trust" class="py-20 bg-white">
+    <section class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-6">Your Family's Health. Our Sacred Responsibility.</h2>
-            <p class="text-lg text-gray-600 mb-10">
-                When you choose Prashi Care, you're not just hiring a service—you're welcoming a team that cares into your home. 
-                Every nurse is background-verified, and every decision is made with dignity at the center.
-            </p>
-
-            <div class="bg-gray-50 p-8 rounded-2xl shadow-inner relative max-w-3xl mx-auto border border-gray-100">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6" data-aos="fade-up">Your Family's Health. Our Responsibility.</h2>
+            <div class="bg-gray-50 p-8 rounded-2xl shadow-inner relative max-w-3xl mx-auto border border-gray-100" data-aos="zoom-in-up">
                 <i class="fas fa-quote-left text-4xl text-gray-200 absolute top-4 left-4"></i>
                 <p class="text-gray-700 text-lg italic mb-6 relative z-10">
-                    "When my father needed ventilator support... Prashi Care didn't just bring the equipment—they brought hope. 
-                    Their nurse, Meera, became like a daughter to us. She cared for him with such love that we never felt alone."
+                    "When my father needed ventilator support... Prashi Care didn't just bring the equipment—they brought hope. Their nurse, Meera, became like a daughter to us."
                 </p>
                 <div class="flex items-center justify-center space-x-3">
                     <div class="w-10 h-10 bg-prashiPink rounded-full flex items-center justify-center text-white font-bold">A</div>
@@ -254,57 +217,61 @@
         </div>
     </section>
 
-    <div class="bg-gradient-to-r from-prashiBlue to-prashiPink py-12">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-            <div class="mb-6 md:mb-0 text-white">
-                <h3 class="text-2xl font-bold">Ready to Bring Care Home?</h3>
-                <p class="opacity-90">Let's talk about what your family needs. Our team is standing by.</p>
-            </div>
-            <a href="#contact" class="px-8 py-3 bg-white text-prashiBlue font-bold rounded-full shadow-lg hover:bg-gray-100 transition">
-                Get Your Free Care Plan Today <i class="fas fa-arrow-right ml-1"></i>
-            </a>
+    <section id="contact" class="py-20 bg-gray-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-20">
+            <div class="absolute right-0 top-0 w-96 h-96 bg-prashiBlue rounded-full blur-3xl"></div>
+            <div class="absolute left-0 bottom-0 w-96 h-96 bg-prashiPink rounded-full blur-3xl"></div>
         </div>
-    </div>
 
-    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800" id="contact">
-        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-down">Need Urgent Care?</h2>
+            <p class="text-xl text-gray-300 mb-8" data-aos="fade-up">Book a free consultation today.</p>
+            
+            <form name="contact" method="POST" data-netlify="true" class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 max-w-lg mx-auto" data-aos="zoom-in">
+                <input type="hidden" name="form-name" value="contact">
+                <div class="grid gap-4">
+                    <input type="text" name="name" required placeholder="Patient Name" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-prashiPink">
+                    <input type="tel" name="phone" required placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-prashiPink">
+                    <select name="service" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-prashiPink">
+                        <option value="" class="text-gray-900">Select Service Needed</option>
+                        <option value="ICU Setup" class="text-gray-900">ICU Setup at Home</option>
+                        <option value="Nursing" class="text-gray-900">Critical Care Nursing</option>
+                        <option value="Elderly Care" class="text-gray-900">Elderly/Post-Op Care</option>
+                    </select>
+                    <button type="submit" class="w-full py-4 rounded-lg bg-gradient-to-r from-prashiBlue to-prashiPink font-bold text-lg hover:opacity-90 transition transform hover:scale-105">Request Call Back</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 text-sm">
             <div class="col-span-1 md:col-span-2">
                 <span class="text-2xl font-bold text-white block mb-4">Prashi Care</span>
-                <p class="mb-4 text-sm opacity-80">Critical Care at Home with Love and Professionalism. Built with compassion. Delivered with precision.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-prashiBlue transition"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-prashiPink transition"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                <p class="opacity-80">Critical Care at Home with Love and Professionalism.</p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="hover:text-prashiBlue"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-prashiPink"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-            
-            <div>
-                <h4 class="text-white font-bold mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#services" class="hover:text-prashiPink transition">Our Services</a></li>
-                    <li><a href="#about" class="hover:text-prashiPink transition">About Us</a></li>
-                    <li><a href="#" class="hover:text-prashiPink transition">Service Areas</a></li>
-                    <li><a href="#" class="hover:text-prashiPink transition">Careers</a></li>
-                </ul>
-            </div>
-
             <div>
                 <h4 class="text-white font-bold mb-4">Contact</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><i class="fas fa-phone mr-2 text-prashiPink"></i> +91 98765 43210</li>
+                <ul class="space-y-2">
+                    <li><i class="fas fa-phone mr-2 text-prashiPink"></i> +91 73871 24518</li>
                     <li><i class="fas fa-envelope mr-2 text-prashiPink"></i> help@prashicare.com</li>
-                    <li><i class="fas fa-map-marker-alt mr-2 text-prashiPink"></i> Maharashtra, India</li>
                 </ul>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-center text-xs opacity-50">
-            &copy; 2026 Prashi Care. All rights reserved. | Privacy Policy
+            &copy; 2026 Prashi Care. Proprietor: Pratibha Dubey. <a href="privacy.html" class="underline hover:text-white">Privacy Policy</a>
         </div>
     </footer>
 
-    <a href="https://wa.me/919876543210" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition z-50 animate-bounce flex items-center justify-center w-14 h-14">
+    <a href="https://wa.me/917387124518" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full shadow-2xl hover:bg-green-600 transition z-50 animate-bounce flex items-center justify-center">
         <i class="fab fa-whatsapp text-3xl"></i>
     </a>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
