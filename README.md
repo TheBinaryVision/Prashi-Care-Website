@@ -6,7 +6,7 @@ Markdown
 > **"Hospital-Grade Care. In the Place You Call Home."**
 
 ## 👨‍💻 Author & Lead Developer
-**Developed & Designed by: [Your Name Here]**
+**Developed & Designed by: [Roshan Vishwakarma]**
 *Computer Science Engineer | Full Stack Developer*
 
 ---
@@ -40,7 +40,6 @@ This project uses a clean, maintainable, and scalable stack:
 ## 📂 Project Structure
 A clean, organized directory structure for easy maintenance:
 
-```bash
 prashi-care/
 ├── index.html       # The main landing page (SEO & Content)
 ├── success.html     # Custom redirection page after form submission
@@ -50,24 +49,22 @@ prashi-care/
 ├── hero.jpg         # Hero section visual
 ├── card.jpg         # About section visual
 └── README.md        # Project Documentation
-⚙️ Local Development Setup
+
+**⚙️ Local Development Setup**
 To run this project on your local machine:
 
-Clone the Repository:
-
-Bash
+**Clone the Repository:**
 git clone [https://github.com/your-username/prashi-care.git](https://github.com/your-username/prashi-care.git)
-Navigate to the folder:
 
-Bash
+**Navigate to the folder:**
 cd prashi-care
-Run the Project:
 
+**Run the Project:**
 Simply double-click index.html.
 
 Pro Tip: Use the Live Server extension in VS Code for real-time hot reloading.
 
-🚢 Deployment Guide
+**🚢 Deployment Guide**
 This project is optimized for Netlify but works on any static host (Vercel, GitHub Pages).
 
 Deploying to Netlify (Recommended)
@@ -85,9 +82,9 @@ Publish Directory: . (Current directory).
 
 Click Deploy.
 
-Note: The Contact Form is pre-configured with data-netlify="true". No backend configuration is needed.
+**Note:** The Contact Form is pre-configured with data-netlify="true". No backend configuration is needed.
 
-🗺️ Future Roadmap
+**🗺️ Future Roadmap**
 I have planned the following features for the Phase 2 update:
 
 [ ] Google Maps API Integration: To display the exact office location dynamically.
@@ -99,4 +96,4 @@ I have planned the following features for the Phase 2 update:
 [ ] Admin Dashboard: A private login area for the proprietor to view leads and manage staff schedules.
 
 📄 License & Rights
-© 2026 Prashi Care. All design, code, and architecture rights reserved by [Your Name Here]. Unauthorized reproduction or distribution of the code logic is prohibited.
+© 2026 Prashi Care. All design, code, and architecture rights reserved by [Roshan Vishwakarma]. Unauthorized reproduction or distribution of the code logic is prohibited.
