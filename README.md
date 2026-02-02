@@ -51,50 +51,39 @@ prashi-care/
 └── README.md        # Project Documentation
 ```
 
-##**⚙️ Local Development Setup**
+## ⚙️ Local Development Setup
 To run this project on your local machine:
-
 **Clone the Repository:**
 git clone [https://github.com/your-username/prashi-care.git](https://github.com/your-username/prashi-care.git)
-
 **Navigate to the folder:**
 cd prashi-care
-
 **Run the Project:**
 Simply double-click index.html.
 
 Pro Tip: Use the Live Server extension in VS Code for real-time hot reloading.
 
-##**🚢 Deployment Guide**
+## 🚢 Deployment Guide
 This project is optimized for Netlify but works on any static host (Vercel, GitHub Pages).
 
 Deploying to Netlify (Recommended)
 Push this code to your GitHub repository.
 
-Log in to Netlify.
-
-Click "New Site from Git".
-
-Select this repository.
-
-Build Command: (Leave Blank).
-
-Publish Directory: . (Current directory).
-
-Click Deploy.
+1. Log in to Netlify.
+2. Click "New Site from Git".
+3. Select this repository.
+4. Build Command: (Leave Blank).
+5. Publish Directory: . (Current directory).
+6. Click Deploy.
 
 **Note:** The Contact Form is pre-configured with data-netlify="true". No backend configuration is needed.
 
-##**🗺️ Future Roadmap**
+## 🗺️ Future Roadmap
 I have planned the following features for the Phase 2 update:
 
-[ ] Google Maps API Integration: To display the exact office location dynamically.
+1. [ ] Google Maps API Integration: To display the exact office location dynamically.
+2. [ ] CMS Integration: Connecting a headless CMS (like Contentful) for a dynamic Health Blog.
+3. [ ] Appointment Scheduling: Integrating Calendly or a custom booking engine for specific time slots.
+4. [ ] Admin Dashboard: A private login area for the proprietor to view leads and manage staff schedules.
 
-[ ] CMS Integration: Connecting a headless CMS (like Contentful) for a dynamic Health Blog.
-
-[ ] Appointment Scheduling: Integrating Calendly or a custom booking engine for specific time slots.
-
-[ ] Admin Dashboard: A private login area for the proprietor to view leads and manage staff schedules.
-
-##**📄 License & Rights**
+## 📄 License & Rights
 © 2026 Prashi Care. All design, code, and architecture rights reserved by [Roshan Vishwakarma]. Unauthorized reproduction or distribution of the code logic is prohibited.
